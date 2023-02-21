@@ -11,6 +11,7 @@ int main()
     MyDblLinkedList.InsertAtBeginning(3);
     MyDblLinkedList.InsertAtBeginning(2);
     MyDblLinkedList.InsertAtBeginning(1);
+    MyDblLinkedList.PrintList();
     system("pause");
     return 0;
 }

@@ -32,4 +32,16 @@ public:
         head=newNode;
         _size++;
     }
+    void PrintList()
+    {
+        cout << "NULL <--> ";
+        Node* Current = head;
+        while (Current != NULL) 
+        {
+            cout << Current->value << " <--> ";
+            Current = Current->next;
+        }
+        cout << "NULL";
+        cout<<endl;
+    }
 };
