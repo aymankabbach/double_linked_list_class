@@ -44,4 +44,15 @@ public:
         cout << "NULL";
         cout<<endl;
     }
+    Node* Find(T value)
+    {
+        Node* Current = head;
+        while (Current != NULL)
+        {
+            if (Current->value == value)
+                return Current;
+            Current = Current->next;
+        }
+        return NULL;
+    }
 };
