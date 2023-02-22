@@ -24,6 +24,9 @@ int main()
     MyDblLinkedList.InsertAfter(N1,500);
     cout<<"linked list after insering 500 after 2"<<endl;
     MyDblLinkedList.PrintList();
+    cout<<"linked list after insering 700 at end"<<endl;
+    MyDblLinkedList.InsertAtEnd(700);
+    MyDblLinkedList.PrintList();
     system("pause");
     return 0;
 }

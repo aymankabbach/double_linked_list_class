@@ -68,4 +68,26 @@ public:
         node->next=newNode;
         _size++;
     }
+    void InsertAtEnd(T value)
+    {
+        Node* newNode= new Node();
+        newNode->value=value;
+        newNode->next=NULL;
+        if (head==NULL)
+        {
+            newNode->prev=NULL;
+            head=newNode;
+        }
+        else
+        {
+            Node* Current = head;
+            while (Current->next != NULL)
+            {
+                Current=Current->next;
+            }
+            newNode->prev=Current;
+            Current->next=newNode;
+        }
+        _size++;
+    }
 };
