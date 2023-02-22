@@ -21,6 +21,9 @@ int main()
     {
         cout<<"Node was not found"<<endl;
     }
+    MyDblLinkedList.InsertAfter(N1,500);
+    cout<<"linked list after insering 500 after 2"<<endl;
+    MyDblLinkedList.PrintList();
     system("pause");
     return 0;
 }

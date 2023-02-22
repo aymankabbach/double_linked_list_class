@@ -55,4 +55,17 @@ public:
         }
         return NULL;
     }
+    void InsertAfter(Node* node, T value)
+    {
+        Node* newNode= new Node();
+        newNode->value=value;
+        newNode->next=node->next;
+        newNode->prev=node;
+        if (node->next!= NULL)
+        {
+            node->next->prev=newNode;
+        }
+        node->next=newNode;
+        _size++;
+    }
 };
