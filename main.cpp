@@ -31,6 +31,9 @@ int main()
     cout<<"linked list after deleting 4"<<endl;
     MyDblLinkedList.DeleteNode(N2);
     MyDblLinkedList.PrintList();
+    cout<<"linked list after deleting first node"<<endl;
+    MyDblLinkedList.DeleteFirstNode();
+    MyDblLinkedList.PrintList();
     system("pause");
     return 0;
 }

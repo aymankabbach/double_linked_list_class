@@ -96,4 +96,19 @@ public:
         node->next->prev=node->prev;
         _size--;
     }
+    void DeleteFirstNode()
+    {
+        if (head==NULL)
+        {
+            return;
+        }
+        Node* temp=head;
+        head=head->next;
+        if (head!=NULL)
+        {
+            head->prev=NULL;
+        }
+        delete temp;
+        _size--;
+    }
 };
