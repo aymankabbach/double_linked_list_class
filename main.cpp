@@ -27,6 +27,10 @@ int main()
     cout<<"linked list after insering 700 at end"<<endl;
     MyDblLinkedList.InsertAtEnd(700);
     MyDblLinkedList.PrintList();
+    clsDblLinkedList<int>::Node* N2=MyDblLinkedList.Find(4);
+    cout<<"linked list after deleting 4"<<endl;
+    MyDblLinkedList.DeleteNode(N2);
+    MyDblLinkedList.PrintList();
     system("pause");
     return 0;
 }

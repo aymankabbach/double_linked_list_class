@@ -90,4 +90,10 @@ public:
         }
         _size++;
     }
+    void DeleteNode(Node* node)
+    {
+        node->prev->next=node->next;
+        node->next->prev=node->prev;
+        _size--;
+    }
 };
