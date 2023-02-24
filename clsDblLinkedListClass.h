@@ -134,4 +134,20 @@ public:
     {
         return size()==0;
     }
+    void reverse()
+    {
+        Node* Current=head;
+        Node* temp=nullptr;
+        while (Current != nullptr)
+        {
+            temp=Current->prev;
+            Current->prev=Current->next;
+            Current->next=temp;
+            Current=Current->prev;
+        }
+        if (temp!=nullptr)
+        {
+            head=temp->prev;
+        }
+    }
 };

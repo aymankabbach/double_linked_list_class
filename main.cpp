@@ -47,6 +47,9 @@ int main()
     {
         cout<<"the linked list is empty"<<endl; 
     }
+    cout<<"reversing the linked list"<<endl;
+    MyDblLinkedList.reverse();
+    MyDblLinkedList.PrintList();
     system("pause");
     return 0;
 }
