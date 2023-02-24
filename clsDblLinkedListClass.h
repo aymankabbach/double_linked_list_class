@@ -111,4 +111,19 @@ public:
         delete temp;
         _size--;
     }
+    void DeleteLastNode()
+    {
+        if (head==NULL)
+        {
+            return;
+        }
+        Node* temp=head;
+        while (temp->next != NULL)
+        {
+            temp=temp->next;
+        }
+        temp->prev->next=NULL;
+        delete temp;
+        _size--;
+    }
 };
