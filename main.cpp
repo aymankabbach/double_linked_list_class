@@ -52,6 +52,7 @@ int main()
     MyDblLinkedList.PrintList();
     clsDblLinkedList<int>::Node* N3=MyDblLinkedList.get_node(2);
     cout<<N3->value<<endl;
+    cout<<"item of 1 is "<<MyDblLinkedList.get_item(0)<<endl;
     system("pause");
     return 0;
 }

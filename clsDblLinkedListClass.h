@@ -167,4 +167,12 @@ public:
         }
         return NULL;
     }
+    T get_item(int index)
+    {
+        Node* item_node=get_node(index);
+        if (item_node!=NULL)
+        {
+            return item_node->value;
+        }
+    }
 };
