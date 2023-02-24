@@ -126,4 +126,8 @@ public:
         delete temp;
         _size--;
     }
+    short size()
+    {
+        return _size;
+    }
 };

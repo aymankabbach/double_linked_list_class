@@ -37,6 +37,7 @@ int main()
     cout<<"linked list after deleting last node"<<endl;
     MyDblLinkedList.DeleteLastNode();
     MyDblLinkedList.PrintList();
+    cout<<"size of the liked list is "<<MyDblLinkedList.size()<<endl;
     system("pause");
     return 0;
 }
