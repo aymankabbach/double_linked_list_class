@@ -150,4 +150,21 @@ public:
             head=temp->prev;
         }
     }
+    Node* get_node(short index)
+    {
+        int pos=0;
+        if (index<0 || index>=size())
+        {
+            return NULL;
+        }
+        Node* Current = head;
+        while (Current != NULL)
+        {
+            if (pos == index)
+                return Current;
+            Current = Current->next;
+            pos++;
+        }
+        return NULL;
+    }
 };

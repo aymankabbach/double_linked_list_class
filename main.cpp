@@ -50,6 +50,8 @@ int main()
     cout<<"reversing the linked list"<<endl;
     MyDblLinkedList.reverse();
     MyDblLinkedList.PrintList();
+    clsDblLinkedList<int>::Node* N3=MyDblLinkedList.get_node(2);
+    cout<<N3->value<<endl;
     system("pause");
     return 0;
 }
