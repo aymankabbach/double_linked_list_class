@@ -38,6 +38,15 @@ int main()
     MyDblLinkedList.DeleteLastNode();
     MyDblLinkedList.PrintList();
     cout<<"size of the liked list is "<<MyDblLinkedList.size()<<endl;
+    if (MyDblLinkedList.is_empty())
+    {
+        cout<<"the linked list is not empty"<<endl;
+
+    }
+    else
+    {
+        cout<<"the linked list is empty"<<endl; 
+    }
     system("pause");
     return 0;
 }

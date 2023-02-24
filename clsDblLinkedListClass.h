@@ -130,4 +130,8 @@ public:
     {
         return _size;
     }
+    bool is_empty()
+    {
+        return size()==0;
+    }
 };
