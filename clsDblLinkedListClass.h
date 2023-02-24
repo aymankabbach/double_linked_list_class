@@ -175,4 +175,12 @@ public:
             return item_node->value;
         }
     }
+    void Update_item(int index, T value)
+    {
+        Node* node=get_node(index);
+        if (node != NULL)
+        {
+           node->value=value; 
+        }
+    }
 };
