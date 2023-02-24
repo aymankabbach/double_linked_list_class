@@ -56,6 +56,10 @@ int main()
     MyDblLinkedList.Update_item(0,100);
     cout<<"item of 1 is "<<MyDblLinkedList.get_item(0)<<endl;
     MyDblLinkedList.PrintList();
+    cout<<"linked list after inserting new node after index 2"<<endl;
+    MyDblLinkedList.InsertAfter(2,55);
+    cout<<MyDblLinkedList.size()<<endl;
+    MyDblLinkedList.PrintList();
     system("pause");
     return 0;
 }

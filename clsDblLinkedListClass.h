@@ -183,4 +183,12 @@ public:
            node->value=value; 
         }
     }
+    void InsertAfter(int index, T value)
+    {
+        if (index>=0  && index<size())
+        {
+            Node* Current=get_node(index);
+            InsertAfter(Current,value);
+        }
+    }
 };
